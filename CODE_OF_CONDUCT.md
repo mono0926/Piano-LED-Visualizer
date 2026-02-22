@@ -1,128 +1,75 @@
-# Contributor Covenant Code of Conduct
+# 貢献者行動規範
 
-## Our Pledge
+## 私たちの誓い
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+私たちは、メンバー、貢献者、およびリーダーとして、年齢、身体の大きさ、目に見えるまたは目に見えない障害、民族性、性的特徴、性自認および性表現、経験レベル、教育、社会経済的ステータス、国籍、個人的な外見、人種、宗教、または性的アイデンティティや指向に関係なく、すべての人にとって嫌がらせのない経験を提供することを誓います。
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+私たちは、オープンで、歓迎され、多様で、包括的で、健全なコミュニティに貢献する方法で行動し、交流することを誓います。
 
-## Our Standards
+## 私たちの基準
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+コミュニティにポジティブな環境をもたらす行動の例には、以下が含まれます：
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+- 他の人に対して共感と思いやりを示すこと
+- 異なる意見、視点、経験を尊重すること
+- 建設的なフィードバックを送り、またそれを快く受け入れること
+- 過ちを犯した際には責任を認め、影響を受けた人々に謝罪し、その経験から学ぶこと
+- 個人としてだけでなく、コミュニティ全体にとって何が最善であるかに焦点を当てること
 
-Examples of unacceptable behavior include:
+受け入れがたい行動の例には、以下が含まれます：
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+- 性的な言葉遣いや画像の使用、およびいかなる種類の性的な関心やアプローチ
+- トローリング、侮辱的または中傷的なコメント、および個人的または政治的な攻撃
+- 公的または私的な嫌がらせ
+- 明示的な許可なく、物理的な住所やメールアドレスなどの他人のプライベートな情報を公開すること
+- 専門的な場において不適切と合理的に判断されるその他の行為
 
-## Enforcement Responsibilities
+## 執行責任
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+コミュニティリーダーは、受け入れ可能な行動の基準を明確にし、執行する責任を負い、不適切、脅迫的、攻撃的、または有害であると判断した行動に対しては、適切かつ公正な是正措置を講じます。
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+コミュニティリーダーは、この行動規範に沿わないコメント、コミット、コード、wikiの編集、イシュー、およびその他の貢献を削除、編集、または拒否する権利と責任を負い、適宜その理由を説明します。
 
-## Scope
+## 適用範囲
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+この行動規範は、すべてのコミュニティスペースに適用され、また個人が公的な場でコミュニティを公式に代表している場合にも適用されます。コミュニティを代表する例としては、公式のメールアドレスの使用、公式のソーシャルメディアアカウントを介した投稿、またはオンラインやオフラインのイベントでの任命された代表者としての活動が含まれます。
 
-## Enforcement
+## 執行
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-onlyoneaw@gmail.com.
-All complaints will be reviewed and investigated promptly and fairly.
+虐待的、嫌がらせ、またはその他の受け入れがたい行動は、執行責任を負うコミュニティリーダー（onlyoneaw@gmail.com）に報告することができます。すべての苦情は迅速かつ公正に検討され、調査されます。
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+すべてのコミュニティリーダーは、事件の報告者のプライバシーと安全を尊重する義務があります。
 
-## Enforcement Guidelines
+## 執行ガイドライン
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+コミュニティリーダーは、行動規範に違反したと判断した行為の結果を決定する際、以下のガイドラインに従います：
 
-### 1. Correction
+### 1. 是正 (Correction)
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+**コミュニティへの影響**: コンテキストにおいて不適切な言葉の使用、またはコミュニティにおいて非専門的または歓迎されないとみなされるその他の行動。
+**結果**: コミュニティリーダーからの私的な書面による警告。違反の性質を明確にし、なぜその行動が不適切であったかの説明を含みます。公的な謝罪を求める場合があります。
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+### 2. 警告 (Warning)
 
-### 2. Warning
+**コミュニティへの影響**: 単一の事件または一連の行動による違反。
+**結果**: 継続的な行動に対する結果を伴う警告。行動規範を執行する側との不用意な接触を含め、関係者との交流を一定期間禁止します。これには、コミュニティスペースだけでなく、ソーシャルメディアなどの外部チャネルでの交流も含まれます。これらの規約に違反した場合、一時的または永久的な追放につながる可能性があります。
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+### 3. 一時的な追放 (Temporary Ban)
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+**コミュニティへの影響**: 継続的な不適切な行動を含む、コミュニティ基準の重大な違反。
+**結果**: 一定期間、コミュニティとのいかなる交流や公的なコミュニケーションも禁止します。この期間中、行動規範を執行する側との不用意な接触を含め、関係者との公的または私的な交流は許可されません。これらの規約に違反した場合、永久的な追放につながる可能性があります。
 
-### 3. Temporary Ban
+### 4. 永久的な追放 (Permanent Ban)
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+**コミュニティへの影響**: 継続的な不適切な行動、個人への嫌がらせ、または特定の個人グループに対する攻撃や差別を含む、コミュニティ基準の違反パターンの提示。
+**結果**: コミュニティ内でのいかなる種類の公的な交流も永久に禁止します。
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+## 謝辞
 
-### 4. Permanent Ban
+この行動規範は、[Contributor Covenant][homepage] バージョン 2.0 (https://www.contributor-covenant.org/version/2/0/code_of_conduct.html) を元に作成されました。
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
+執行ガイドラインは [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity) に触発されました。
 
 [homepage]: https://www.contributor-covenant.org
 
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+行動規範に関するよくある質問とその答えについては、https://www.contributor-covenant.org/faq をご覧ください。

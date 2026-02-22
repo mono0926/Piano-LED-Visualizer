@@ -1,41 +1,40 @@
-# /draft/
+# オートホットスポット設定 (ドラフト)
 
-https://github.com/schollz/raspberry-pi-turnkey
+参考: https://github.com/schollz/raspberry-pi-turnkey
 
-default wpa.conf for hotspot:
+### ホットスポット用のデフォルト wpa.conf:
 
 ```
-country=GB
+country=JP
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 ```
 
-for normal connection:
+### 通常のWi-Fi接続用:
 
 ```
-country=GB
+country=JP
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 network={
-    ssid="wifi name"
-    psk="password"
+    ssid="wifi名"
+    psk="パスワード"
 }
 ```
 
+### Wi-Fi接続に切り替えた後のスクリプト:
 
-After switching to wi-fi:
-
-```
+```bash
 #!/bin/bash
 
 sleep 3
 
-# disable the AP
+# アクセスポイント (AP) を無効にする
 sudo cp config/hostapd.disabled /etc/default/hostapd
 sudo cp config/dhcpcd.conf.disabled /etc/dhcpcd.conf
 sudo cp config/dnsmasq.conf.disabled /etc/dnsmasq.conf
 
-# load wlan configuration
+# wlan設定を読み込む
 sudo cp disable_wpa.conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 sleep 5
@@ -47,19 +46,19 @@ sleep 10
 sudo ifconfig wlan0 up
 ```
 
-After switching to hotspot:
+### ホットスポットに切り替えた後のスクリプト:
 
-```
+```bash
 #!/bin/bash
 
 sleep 3
 
-# enable the AP
+# アクセスポイント (AP) を有効にする
 sudo cp config/hostapd /etc/default/hostapd
 sudo cp config/dhcpcd.conf /etc/dhcpcd.conf
 sudo cp config/dnsmasq.conf /etc/dnsmasq.conf
 
-# load wan configuration
+# wan設定を読み込む
 sudo cp wpa.conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 sleep 5

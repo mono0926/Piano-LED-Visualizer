@@ -1,50 +1,49 @@
-## Configuration 1
-### version A
+# 外部デバイスとの接続構成
+
+## 構成 1
+
+### バージョン A
+
 ![configuration 1A](https://i.imgur.com/1vFlqLs.png)
 
-In this configuration, the piano is connected to a Raspberry Pi (with a USB OTG hub in between). 
-Our PC/MAC/tablet (from now on, let's just call it the "PC") is also connected to the USB OTG hub, 
-but with the Sevilla's USB-USB device in between. This setup allows us to use lights even if the PC is not connected.
+この構成では、電子ピアノをRaspberry Piに接続します（間にUSB OTGハブを介します）。
+PC/Mac/タブレット（以下「PC」と呼びます）もUSB OTGハブに接続しますが、その間に **Sevilla's USB-USBデバイス** を介在させます。このセットアップにより、PCが接続されていない状態でもLEDを光らせることが可能です。
 
+### バージョン B
 
-### version B
 ![configuration 1B](https://i.imgur.com/f5xmQGt.png)
 
-In the second configuration, the piano is connected to the PC. 
-The connection between the PC and Raspberry Pi is made using the Sevilla's USB-USB. 
-This connection is useful if we want minimal delays between the piano and PC, for tasks like recording or learning. 
-Since it's a wired connection, differences in latency are negligible, so this configuration is not recommended. 
-It also requires the PC to be turned on.
+第2の構成では、電子ピアノをPCに直接接続します。
+PCとRaspberry Piの間の接続は、Sevilla's USB-USBを使用します。この構成は、演奏の録音や学習において、ピアノとPCの間の遅延を最小限に抑えたい場合に有用です。ただし、有線接続であれば遅延の差は無視できるレベルであるため、この構成はあまり推奨されません。また、PCの電源が常に入っている必要があります。
 
-### Why do we need Sevilla's USB-USB at all? 
-To transmit MIDI signals over USB, 
-at least one side of the transmission must present itself as a MIDI device. 
-There is an option for the Raspberry Pi to act as such a device, but then we could only connect one device. 
-Instead, we can use a device that simulates MIDI, creating a bridge between two non-MIDI devices.
+### なぜ Sevilla's USB-USB が必要なのか？
 
-## Configuration 2
-### version A
+USB経由でMIDI信号を送受信するには、少なくとも一方のデバイスが「MIDIデバイス」として認識される必要があります。Raspberry Pi自体をMIDIデバイスとして振る舞わせるオプションもありますが、その場合は1つのデバイスしか接続できません。代わりに、MIDI信号をシミュレートするデバイス（Sevilla's USB-USB）を使用することで、非MIDIデバイス同士の橋渡し（ブリッジ）が可能になります。
+
+---
+
+## 構成 2
+
+### バージョン A
+
 ![configuration 2A](https://i.imgur.com/d61eT1Y.png)
 
-If we don't have Sevilla USB-USB, we can use a wireless connection instead. 
-For this, we use the RTP MIDI protocol. We connect our piano with a cable to the Raspberry Pi. 
-On our PC, we configure RTP MIDI software and establish a connection between the PC and RPi.
+Sevilla USB-USBを持っていない場合は、代わりにワイヤレス接続を使用できます。
+これには **RTP MIDI** プロトコルを利用します。ピアノはケーブルでRaspberry Piに接続します。
+PC側でRTP MIDIソフトウェアを設定し、PCとRaspberry Piの間に接続を確立します。
 
+### バージョン B
 
-### version B
 ![configuration 2B](https://i.imgur.com/DI3Cd7h.png)
 
-Another configuration involves connecting the piano to the PC. 
-The connection between the RPi and PC is through the RTP MIDI protocol. 
-Similar to configuration 2B, this connection aims to minimize delays between Piano and PC. 
-In the case of a wireless connection, these differences may become noticeable. 
-This connection requires the PC to be turned on and the appropriate configuration of Synthesia or a 
-similar program but is useful if we want no delays during learning.
+別の構成として、ピアノをPCに接続する方法があります。
+Raspberry PiとPCの間の接続は、RTP MIDIプロトコルを介して行います。構成1Bと同様に、ピアノとPCの間の遅延を最小限に抑えることが目的です。ワイヤレス接続の場合、遅延の差が顕著になる可能性があります。この構成では、PCの電源が入っていることと、Synthesiaなどの適切なソフトウェア設定が必要になりますが、学習中の遅延をなくしたい場合に有用です。
 
+---
 
-## Configuration 3
+## 構成 3
+
 ![configuration 3](https://i.imgur.com/OxzG7cv.png)
 
-The next configuration is specific to tablets or phones with the Android system. 
-After selecting the 'MIDI' option, Android will act as a MIDI device, 
-enabling the transmission of MIDI messages without the need for Sevilla's USB-USB.
+この構成は、Androidシステムを搭載したタブレットやスマートフォンに特化したものです。
+Androidの設定で「MIDI」オプションを選択すると、Androidデバイス自体がMIDIデバイスとして機能します。これにより、Sevilla's USB-USBを介さずにMIDIメッセージの送信が可能になります。

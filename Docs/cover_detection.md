@@ -1,13 +1,11 @@
-Implementing a keyboard cover detection depends highly on your specific model. Basically any type of switch will work,
-that closes the circuit when the cover is closed. For example, you can use a mechanical switch that is placed
-underneath the cover and will be closed by the cover. Alternatively you can use a magnetic reed switch (will be used as
-example). 
+# 鍵盤カバーの開閉検知
 
-Wire one end of the switch to GPIO PIN 12 on your pi. The other end must be connected to ground. You can share the
-ground line used by the RGB strip.
+鍵盤カバーの検知の実装方法は、ピアノのモデルに大きく依存します。基本的には、カバーが閉じたときに回路が閉じる（通電する）タイプのスイッチであればどのようなものでも使用可能です。例えば、カバーの下に配置してカバーの重みで押される機械式スイッチや、磁気リードスイッチ（以下の例で使用）などが利用できます。
+
+### 配線方法
+
+スイッチの一方の端をRaspberry Piの **GPIO 12番ピン** に接続します。もう一方の端は **GND（グラウンド）** に接続してください。RGB LEDテープで使用しているGNDラインを共有することも可能です。
 
 ![coverdetection_pic](../Docs/pics/coverdetection_pic.jpg)
 
-In this example the reed switch is taped down onto the piano. A small neodymium magnet is mounted behind the cover and
-sits directly in front of the reed switch when being closed. One wire goes to the raspberry GPIO PIN 12, the other
-shares the ground supply of the RGB strip.
+この例では、リードスイッチをピアノにテープで固定しています。小型のネオジム磁石をカバーの裏側に取り付け、カバーを閉じた際にリードスイッチの真上に磁石が来るように設置しています。一方はRaspberry PiのGPIO 12番ピンへ、もう一方はLEDテープのGNDラインと共有しています。

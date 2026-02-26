@@ -25,7 +25,7 @@ Raspberry Pi OS Liteをインストールする際、以下の設定を推奨し
 
 [Raspberry Pi OS Lite](https://www.raspberrypi.org/software/) をSDカードにインストールします。
 
-モニター、マウス、キーボードを直接接続できない場合は、[Wi-Fi経由のSSH(英語)](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/wifi_setup.md) で接続してください。
+モニター、マウス、キーボードを直接接続できない場合は、[Wi-Fi経由のSSH](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/wifi_setup.md) で接続してください。
 
 ### インストールスクリプトの実行
 

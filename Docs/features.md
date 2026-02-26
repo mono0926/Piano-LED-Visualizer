@@ -100,7 +100,7 @@ Webインターフェースまたはピアノを通じて直接再生できま�
 
 ## Synthesiaでの学習 <a name="learning_with_synthesia"></a>
 
-PC/Mac/Androidと接続する方法は主に3つあります（詳細は [接続図(英語)](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/external_devices.md) 参照）：
+PC/Mac/Androidと接続する方法は主に3つあります（詳細は [接続図](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/external_devices.md) 参照）：
 
 1. **Sevilla's Soft MIDI USB-USB デバイス**: 最も推奨される方法。低遅延でパケットロスがなく、安定しています。
 2. **RTP MIDI**: Ethernet経由のMIDI。同じローカルネットワークに接続されている必要があります。

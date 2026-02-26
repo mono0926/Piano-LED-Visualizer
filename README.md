@@ -21,7 +21,7 @@ Piano LED Visualizerは、Raspberry PiにLEDテープを接続し、ピアノ演
 - **拡張ハット（オプション）**: ボタンとスクリーンを備えた追加ハットを使用して、スタンドアロンデバイスとして操作しやすくできます。
 - **アニメーション**: 音楽に合わせたアニメーションで、演奏の雰囲気を高めます。
 
-## [画像付きの機能詳細はこちら (英語)](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/features.md)
+## [画像付きの機能詳細はこちら ](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/features.md)
 
 # 必要なもの
 
@@ -43,7 +43,7 @@ Piano LED Visualizerは、Raspberry PiにLEDテープを接続し、ピアノ演
 
 **必須ではありませんが、見た目を整えるためにあると良いもの:**
 
-- **カスタム3Dプリントケース**（作者が改造した [STLファイル](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/RPICaseModel.stl) があります。電源ソケットや配線用の穴が追加されています。[オリジナルモデル](https://www.thingiverse.com/thing:3393553)）
+- **カスタム3Dプリントケース**（作者が改造した [STLファイル](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/RPICaseModel.stl) があります。電源ソケットや配線用の穴が追加されています。[オリジナルモデル](https://www.thingiverse.com/thing:3393553)）
 - **ナイロンスペーサー M2.5 10mm** [Amazon US](https://amzn.to/3Ku1Lma)
 - **ネジ M2.5 10mm** [Amazon US](https://amzn.to/47iQv5P)
 - **Waveshare LCD TFT 1.44'' 128x128px** [Amazon US](https://amzn.to/2YkW5nC)
@@ -53,7 +53,7 @@ Piano LED Visualizerは、Raspberry PiにLEDテープを接続し、ピアノ演
   - シリカゲル製等の代替品: [Aliexpress](https://s.click.aliexpress.com/e/_A0HNfF) (12mm 2mのT0515を選択)
 - **両面テープ**: ピアノに固定するために使用します。
 - **Windows 10搭載のノートPC/タブレット**: Synthesiaを実行するために必要。
-- **カバー検知用スイッチ**: 鍵盤カバーの開閉を検知する場合（[説明書(英語)](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/cover_detection.md)参照）。
+- **カバー検知用スイッチ**: 鍵盤カバーの開閉を検知する場合（[説明書](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/cover_detection.md)参照）。
 
 _ネジ、スペーサー、ワイヤーなどの小物は、まとめ買いを避けるために地元のショップで探すのが賢明です。_
 
@@ -74,11 +74,11 @@ Wi-Fi接続が不要な場合は、そのままSDカードをRaspberry Piに差�
 バージョン1.5以降の場合:
 RPiは「PianoLEDVisualizer」（パスワード: visualizer）という名前のWi-Fiホットスポットをセットアップします。接続後、ブラウザで `pianoledvisualizer.local` にアクセスしてWebインターフェースを開いてください。「Network」タブから通常のネットワークに接続できます。
 
-[手動でのWi-Fi設定方法(英語)](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/wifi_setup.md) もあります。
+[手動でのWi-Fi設定方法](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/wifi_setup.md) もあります。
 
 ### 2. 手動インストール
 
-[手動インストールの手順(英語)](https://github.com/onlaj/Piano-LED-Visualizer/blob/master/Docs/manual_installation.md)
+[手動インストールの手順](https://github.com/mono0926/Piano-LED-Visualizer/blob/ja/Docs/manual_installation.md)
 
 # LEDテープとRaspberry Piの接続
 

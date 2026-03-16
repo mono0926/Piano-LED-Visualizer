@@ -492,8 +492,9 @@ def screensaver(menu, midiports, saving, ledstrip, ledsettings, state_manager=No
         time.sleep(delay)
         i += 1
         try:
-            # Exit screensaver if MIDI activity or state changed to active use
-            if len(midiports.midi_queue) != 0 or (state_manager and state_manager.is_active_use()):
+            # Exit screensaver if meaningful MIDI activity or state changed to active use
+            # Checking if last_activity was updated in the last 2 seconds
+            if (time.time() - midiports.last_activity) < 2 or (state_manager and state_manager.is_active_use()):
                 menu.screensaver_is_running = False
                 saving.start_time = time.perf_counter()
                 menu.screen_status = 1

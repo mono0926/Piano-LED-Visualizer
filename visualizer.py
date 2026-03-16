@@ -191,7 +191,10 @@ class VisualizerApp:
 
     def check_activity_backlight(self, ledstrip, ledsettings, midiports, menu, current_time):
         now = current_time
-        if (now - midiports.last_activity) > 120 and ledsettings.disable_backlight_on_idle:
+        # Use StateManager's idle timeout if available (defaults to 10 minutes)
+        idle_timeout = self.state_manager.idle_timeout_seconds if self.state_manager else 120
+        
+        if (now - midiports.last_activity) > idle_timeout and ledsettings.disable_backlight_on_idle:
             if not self.backlight_cleared:
                 ledsettings.backlight_stopped = True
                 fastColorWipe(ledstrip.strip, True, ledsettings)

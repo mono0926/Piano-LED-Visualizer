@@ -190,21 +190,24 @@ class VisualizerApp:
             screensaver(menu, midiports, ci.saving, ci.ledstrip, ci.ledsettings, self.state_manager)
 
     def check_activity_backlight(self, ledstrip, ledsettings, midiports, menu, current_time):
-        now = current_time
-        # Use StateManager's idle timeout if available (defaults to 10 minutes)
-        idle_timeout = self.state_manager.idle_timeout_seconds if self.state_manager else 120
+        if not self.state_manager:
+            return
+
+        is_idle = self.state_manager.is_idle()
         
-        if (now - midiports.last_activity) > idle_timeout and ledsettings.disable_backlight_on_idle:
+        if is_idle and ledsettings.disable_backlight_on_idle:
             if not self.backlight_cleared:
                 ledsettings.backlight_stopped = True
                 fastColorWipe(ledstrip.strip, True, ledsettings)
                 menu.set_backlight(False)
+                menu.screen_on = 0
                 self.backlight_cleared = True
         else:
             if self.backlight_cleared:
                 ledsettings.backlight_stopped = False
                 fastColorWipe(ledstrip.strip, True, ledsettings)
                 menu.set_backlight(True)
+                menu.screen_on = 1
                 self.backlight_cleared = False
 
     def update_display(self, elapsed_time, menu):

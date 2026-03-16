@@ -54,9 +54,9 @@ class StateManager:
     def reload_config(self):
         """Reload configuration from settings"""
         try:
-            # IDLE delay in minutes (default 10 minutes)
+            # IDLE delay in minutes (default 2 minutes)
             idle_timeout_value = self.usersettings.get_setting_value("idle_timeout_minutes")
-            self.idle_timeout_minutes = float(idle_timeout_value) if idle_timeout_value else 10.0
+            self.idle_timeout_minutes = float(idle_timeout_value) if idle_timeout_value else 2.0
             self.idle_timeout_seconds = self.idle_timeout_minutes * 60
             
             # MIDI to normal transition (1 minute after MIDI stops)

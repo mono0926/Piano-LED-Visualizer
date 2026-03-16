@@ -67,7 +67,7 @@ class LEDEffectsProcessor:
                     red, green, blue = (0, 0, 0)
                     led_changed = True
 
-            if self.ledstrip.keylist[n] <= 0 and self.menu.screensaver_is_running is not True:
+            if self.ledstrip.keylist[n] <= 0 and self.menu.screensaver_is_running is not True and not self.ledsettings.backlight_stopped:
                 backlight_level = float(self.ledsettings.backlight_brightness_percent) / 100
                 red = int(self.ledsettings.get_backlight_color("Red")) * backlight_level
                 green = int(self.ledsettings.get_backlight_color("Green")) * backlight_level
@@ -100,7 +100,7 @@ class LEDEffectsProcessor:
         flicker_strength = self.ledsettings.pulse_flicker_strength / 100.0
         
         # Base background color (backlight) to blend on top of
-        if not self.menu.screensaver_is_running:
+        if not self.menu.screensaver_is_running and not self.ledsettings.backlight_stopped:
             backlight_level = float(self.ledsettings.backlight_brightness_percent) / 100
             br = int(self.ledsettings.get_backlight_color("Red")) * backlight_level
             bg = int(self.ledsettings.get_backlight_color("Green")) * backlight_level

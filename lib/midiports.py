@@ -330,7 +330,7 @@ class MidiPorts:
         # Only update activity timer for meaningful MIDI messages
         msg_type = getattr(msg, "type", None)
         is_meta = getattr(msg, "is_meta", False)
-        meaningful_types = ("note_on", "note_off", "control_change", "pitchwheel", "program_change", "aftertouch", "polytouch")
+        meaningful_types = ("note_on", "note_off")
         if not is_meta and msg_type in meaningful_types:
             self.last_activity = time.time()
         

@@ -167,3 +167,8 @@ class LCD(object):
         GPIO.output(self._dc,GPIO.HIGH)
         for i in range(0,len(_buffer),4096):
             self._spi.writebytes(_buffer[i:i+4096])		
+    def set_backlight(self, state):
+        if state:
+            GPIO.output(self._bl, GPIO.HIGH)
+        else:
+            GPIO.output(self._bl, GPIO.LOW)

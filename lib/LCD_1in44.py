@@ -312,3 +312,9 @@ class LCD:
 		GPIO.output(LCD_Config.LCD_DC_PIN, GPIO.HIGH)
 		for i in range(0,len(pix),4096):
 			LCD_Config.SPI_Write_Byte(pix[i:i + 4096])
+
+	def set_backlight(self, state):
+		if state:
+			GPIO.output(LCD_Config.LCD_BL_PIN, GPIO.HIGH)
+		else:
+			GPIO.output(LCD_Config.LCD_BL_PIN, GPIO.LOW)

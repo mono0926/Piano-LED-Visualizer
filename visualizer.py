@@ -195,11 +195,13 @@ class VisualizerApp:
             if not self.backlight_cleared:
                 ledsettings.backlight_stopped = True
                 fastColorWipe(ledstrip.strip, True, ledsettings)
+                self.menu.set_backlight(False)
                 self.backlight_cleared = True
         else:
             if self.backlight_cleared:
                 ledsettings.backlight_stopped = False
                 fastColorWipe(ledstrip.strip, True, ledsettings)
+                self.menu.set_backlight(True)
                 self.backlight_cleared = False
 
     def update_display(self, elapsed_time, menu):

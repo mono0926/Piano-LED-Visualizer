@@ -174,6 +174,11 @@ class MenuLCD:
             logger.debug(f"Failed to load menu title PNG: {e}")
 
 
+
+    def set_backlight(self, state):
+        self.LCD.set_backlight(state)
+        # logger.info(f"LCD backlight set to: {state}")
+
     def _parse_color(self, color_str):
             """Parse 'R,G,B', '#RRGGBB', color names, or 'Default Grey'. Fallback to #27272a."""
             DEFAULT_GREY = (39, 39, 42)  # #27272a

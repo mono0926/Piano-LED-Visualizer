@@ -474,7 +474,13 @@ class LearnMIDI:
                 absolute_idx = start_idx
 
                 for msg in self.song_tracks[start_idx:end_idx]:
-                    self.midiports.last_activity = time.time()
+                    # Only update activity timer for meaningful MIDI messages
+                    msg_type = getattr(msg, "type", None)
+                    is_meta = getattr(msg, "is_meta", False)
+                    meaningful_types = ("note_on", "note_off", "control_change", "pitchwheel", "program_change", "aftertouch", "polytouch")
+                    if not is_meta and msg_type in meaningful_types:
+                        self.midiports.last_activity = time.time()
+                    
                     # Exit thread if learning is stopped
                     if not self.is_started_midi:
                         break

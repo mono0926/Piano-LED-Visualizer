@@ -81,10 +81,17 @@ class MIDIEventProcessor:
                 except Exception as e:
                     logger.warning(f"[process midi events] Unexpected exception occurred: {e}")
 
-            midiports.last_activity = time.time()
-            # Update state manager for MIDI activity
-            if self.state_manager:
-                self.state_manager.update_midi_activity()
+            # Only update activity timer for meaningful MIDI messages
+            # (ignore clock, active_sensing, and meta messages)
+            msg_type = getattr(msg, "type", None)
+            is_meta = getattr(msg, "is_meta", False)
+            meaningful_types = ("note_on", "note_off", "control_change", "pitchwheel", "program_change", "aftertouch", "polytouch")
+            
+            if not is_meta and msg_type in meaningful_types:
+                midiports.last_activity = time.time()
+                # Update state manager for MIDI activity
+                if self.state_manager:
+                    self.state_manager.update_midi_activity()
 
             msg_type = getattr(msg, "type", None)
             velocity = getattr(msg, "velocity", 0)

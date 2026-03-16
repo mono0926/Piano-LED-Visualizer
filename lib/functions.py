@@ -892,8 +892,7 @@ def startup_animation(ledstrip, ledsettings, duration_ms=2000, max_leds=30):
 
         time.sleep(int(step_delay))
 
-    from lib.functions import fastColorWipe
-    fastColorWipe(ledstrip, ledsettings)
+    fastColorWipe(ledstrip.strip, True, ledsettings)
 
 
 def theaterChaseRainbow(ledstrip, ledsettings, menu, speed_ms=None):

@@ -404,6 +404,11 @@ def screensaver(menu, midiports, saving, ledstrip, ledsettings, state_manager=No
         if state_manager:
             state_manager.update_state(midiports, menu)
         
+        # Priority check: If auto-off is enabled and we are idle, exit screensaver immediately
+        if state_manager and state_manager.is_idle() and ledsettings.disable_backlight_on_idle:
+            menu.screensaver_is_running = False
+            break
+
         # Adjust delay based on state
         if state_manager:
             if state_manager.is_idle():
@@ -425,10 +430,6 @@ def screensaver(menu, midiports, saving, ledstrip, ledsettings, state_manager=No
             cpu_history = [None] * int(interval)
             cpu_average = 0
             i = 0
-
-        if int(menu.screen_off_delay) > 0 and ((time.perf_counter() - saving.start_time) > (int(menu.screen_off_delay) * 60)):
-            menu.screen_status = 0
-            GPIO.output(24, 0)
 
         menu.screensaver_is_running = True
 

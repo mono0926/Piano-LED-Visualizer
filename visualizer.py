@@ -139,8 +139,12 @@ class VisualizerApp:
             # Get dynamic sleep interval based on current state
             sleep_interval = self.state_manager.get_loop_delay()
 
-            self.check_screensaver(midiports, menu, now_wall)
-            manage_idle_animation(ledstrip, ledsettings, menu, midiports, self.state_manager)
+            # Skip screensaver and idle animation if backlight is disabled on idle
+            is_idle = self.state_manager.is_idle()
+            if not (is_idle and ledsettings.disable_backlight_on_idle):
+                self.check_screensaver(midiports, menu, now_wall)
+                manage_idle_animation(ledstrip, ledsettings, menu, midiports, self.state_manager)
+            
             self.check_activity_backlight(ledstrip, ledsettings, midiports, menu, now_wall)
             self.update_display(elapsed_time, menu)
             self.check_color_mode(ledsettings)

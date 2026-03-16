@@ -58,7 +58,7 @@ class MidiPorts:
         self.websocket_midi_queue = deque(maxlen=1000)  # MIDI messages from websocket
         # Count dropped messages when queue is full (diagnostics)
         self.drop_counter = 0
-        self.last_activity = 0
+        self.last_activity = time.time()
         self.inport = None
         self.playport = None
         self.midipending = None

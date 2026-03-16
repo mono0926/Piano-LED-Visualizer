@@ -191,7 +191,7 @@ class VisualizerApp:
 
     def check_activity_backlight(self, ledstrip, ledsettings, midiports, current_time):
         now = current_time
-        if (now - midiports.last_activity) > 120:
+        if (now - midiports.last_activity) > 120 and ledsettings.disable_backlight_on_idle:
             if not self.backlight_cleared:
                 ledsettings.backlight_stopped = True
                 fastColorWipe(ledstrip.strip, True, ledsettings)
